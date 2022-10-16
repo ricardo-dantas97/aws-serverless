@@ -1,0 +1,19 @@
+Create Lambda with .zip file
+
+AWS Lambda CLI Reference Doc
+https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/index.html
+
+
+Get role
+aws iam get-role --role-name lambda-ex
+
+arn:aws:iam::401329610093:role/lambda-ex
+
+
+Create lambda
+aws lambda create-function \
+    --function-name my-function \
+    --runtime python3.7 \
+    --zip-file fileb://function.zip \
+    --handler main.lambda_handler \
+    --role arn:aws:iam::401329610093:role/lambda-ex

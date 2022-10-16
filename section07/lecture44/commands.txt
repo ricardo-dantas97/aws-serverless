@@ -1,0 +1,16 @@
+Create role for lambda
+
+Invoke command:
+aws lambda invoke --function-name my-function --cli-binary-format raw-in-base64-out --payload file:/event.json response.json
+
+
+Multi line character - Ubuntu
+aws lambda invoke \
+    --function-name my-function --cli-binary-format raw-in-base64-out \
+    --payload file://event.json \
+    response.json
+
+
+Example retrieve a log ID
+Get log from CloudWatch
+aws lambda invoke --function-name my-function out --log-type Tail

@@ -1,0 +1,11 @@
+Invoking Lambda functions with the AWS CLI
+
+Invoke command:
+aws lambda invoke --function-name my-function --cli-binary-format raw-in-base64-out --payload '{"key1": "ricardo", "key2": "dantas", "key3": "ribeiro"}' response.json
+
+
+Multi line character - Ubuntu
+aws lambda invoke \
+    --function-name my-function --cli-binary-format raw-in-base64-out \
+    --payload '{"key1": "ricardo", "key2": "dantas", "key3": "ribeiro"}' \
+    response.json

@@ -1,0 +1,4 @@
+Deploy Python Lambda function with zip file archives
+
+Creating zip file
+zip function.zip main.py
