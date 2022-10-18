@@ -1,0 +1,24 @@
+Update lambda function with dependencies using AWS CLI
+
+Steps
+1 - Install required dependencies into pip
+2 - Zip function code
+3 - Update lambda function with CLI
+4 - Invoke updated lambda function with CLI
+
+
+Commands:
+1
+  zip function.zip main.py
+
+2 
+  aws lambda update-function-code \
+      --function-name my-function \
+      --zip-file fileb://my-deployment-package.zip
+
+3
+  aws lambda invoke \
+  --function-name my-function \
+  --cli-binary-format raw-in-base64-out \
+  --payload file://event.json \
+  response.json
