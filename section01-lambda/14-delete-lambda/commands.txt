@@ -1,0 +1,3 @@
+AWS Deleting Lambda functions
+
+aws lambda delete-function my-function

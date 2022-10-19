@@ -1,0 +1,27 @@
+AWS Lambda Context Object
+
+1 - Develop Lambda Function Code
+2 - zip function Code
+3 - create lambda function with cli
+4 - invoke updated lambda function with cli
+
+ 2 - zip function.zip lambda.py
+
+ 3 - create lambda
+ get role:
+ aws iam get-role --role-name lambda-ex
+ ARN: arn:aws:iam::401329610093:role/lambda-ex
+
+ aws lambda create-function \
+    --function-name my-function-context \
+    --runtime python3.8 \
+    --zip-file fileb://function.zip \
+    --handler lambda.lambda_handler \
+    --role arn:aws:iam::401329610093:role/lambda-ex
+
+4 - Invoke
+aws lambda invoke \
+  --function-name my-function-context \
+  --cli-binary-format raw-in-base64-out \
+  --payload file://event.json \
+  response.json
