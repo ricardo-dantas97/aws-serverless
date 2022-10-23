@@ -12,8 +12,12 @@ def lambda_handler(event, context):
             id = event['pathParameters']['id']
             body = f'Processing GET product ID {id}'
         elif route == 'POST /product':
-            post_body = json.loads(event['body'])
+            if 'body' in event:
+                post_body = json.loads(event['body'])
+            else:
+                post_body = {}
             body = f'Body received: {post_body}'
+                
         elif route == 'DELETE /product/{id}':
             id = event['pathParameters']['id']
             body = f'Processing DELETE product ID {id}'
