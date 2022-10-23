@@ -1,0 +1,159 @@
+{
+    "version": "2.0",
+    "routeKey": "POST /product",
+    "rawPath": "/product",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "content-length": "44",
+        "content-type": "application/json",
+        "host": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "postman-token": "9fef0330-6047-4b9c-ae97-66b26272a300",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "x-amzn-trace-id": "Root=1-6355bbda-4a40f25e745e4b9f7bb1acd0",
+        "x-forwarded-for": "179.213.182.114",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "401329610093",
+        "apiId": "6k8rv1d8s6",
+        "domainName": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "domainPrefix": "6k8rv1d8s6",
+        "http": {
+            "method": "POST",
+            "path": "/product",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "179.213.182.114",
+            "userAgent": "PostmanRuntime/7.29.2"
+        },
+        "requestId": "aepKJiuhIAMEMFA=",
+        "routeKey": "POST /product",
+        "stage": "$default",
+        "time": "23/Oct/2022:22:10:34 +0000",
+        "timeEpoch": 1666563034319
+    },
+    "body": "{\n    \"product\": \"phone\",\n    \"price\": 500\n}",
+    "isBase64Encoded": false
+}
+
+{
+    "version": "2.0",
+    "routeKey": "GET /product",
+    "rawPath": "/product",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "content-length": "0",
+        "host": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "postman-token": "0e59f9cb-fe8a-46a1-9ecb-318a14381e2b",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "x-amzn-trace-id": "Root=1-6355bc2c-47edd1c77d035ee349ed346b",
+        "x-forwarded-for": "179.213.182.114",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "401329610093",
+        "apiId": "6k8rv1d8s6",
+        "domainName": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "domainPrefix": "6k8rv1d8s6",
+        "http": {
+            "method": "GET",
+            "path": "/product",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "179.213.182.114",
+            "userAgent": "PostmanRuntime/7.29.2"
+        },
+        "requestId": "aepXAgYKIAMEMYg=",
+        "routeKey": "GET /product",
+        "stage": "$default",
+        "time": "23/Oct/2022:22:11:56 +0000",
+        "timeEpoch": 1666563116640
+    },
+    "isBase64Encoded": false
+}
+
+{
+    "version": "2.0",
+    "routeKey": "GET /product/{id}",
+    "rawPath": "/product/5",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "content-length": "0",
+        "host": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "postman-token": "cc047f7b-21e7-4408-81bd-a1a2389c4213",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "x-amzn-trace-id": "Root=1-6355bc31-603429601f8df028422d0f50",
+        "x-forwarded-for": "179.213.182.114",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "401329610093",
+        "apiId": "6k8rv1d8s6",
+        "domainName": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "domainPrefix": "6k8rv1d8s6",
+        "http": {
+            "method": "GET",
+            "path": "/product/5",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "179.213.182.114",
+            "userAgent": "PostmanRuntime/7.29.2"
+        },
+        "requestId": "aepX0jV0oAMEMvw=",
+        "routeKey": "GET /product/{id}",
+        "stage": "$default",
+        "time": "23/Oct/2022:22:12:01 +0000",
+        "timeEpoch": 1666563121896
+    },
+    "pathParameters": {
+        "id": "5"
+    },
+    "isBase64Encoded": false
+}
+
+{
+    "version": "2.0",
+    "routeKey": "DELETE /product/{id}",
+    "rawPath": "/product/5",
+    "rawQueryString": "",
+    "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "content-length": "0",
+        "host": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "postman-token": "f21b9729-2255-4a11-bc22-d3b97e83a754",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "x-amzn-trace-id": "Root=1-6355bc37-7c24f4960ca5ef4b16907e0d",
+        "x-forwarded-for": "179.213.182.114",
+        "x-forwarded-port": "443",
+        "x-forwarded-proto": "https"
+    },
+    "requestContext": {
+        "accountId": "401329610093",
+        "apiId": "6k8rv1d8s6",
+        "domainName": "6k8rv1d8s6.execute-api.us-east-1.amazonaws.com",
+        "domainPrefix": "6k8rv1d8s6",
+        "http": {
+            "method": "DELETE",
+            "path": "/product/5",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "179.213.182.114",
+            "userAgent": "PostmanRuntime/7.29.2"
+        },
+        "requestId": "aepYvheEIAMENcg=",
+        "routeKey": "DELETE /product/{id}",
+        "stage": "$default",
+        "time": "23/Oct/2022:22:12:07 +0000",
+        "timeEpoch": 1666563127764
+    },
+    "pathParameters": {
+        "id": "5"
+    },
+    "isBase64Encoded": false
+}
