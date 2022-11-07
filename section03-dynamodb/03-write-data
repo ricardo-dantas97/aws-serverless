@@ -1,0 +1,22 @@
+Write data into DynamoDB Table with AWS CLI
+
+aws dynamodb put-item \
+    --table-name Order \
+    --item \
+        '{
+            "id": {"S": "1"}, 
+            "status": {"S": "IN_PROGRESS"}, 
+            "desc": {"S": "iphone order"}, 
+            "order_date": {"S": "2022-08-09"}
+        }'
+
+
+aws dynamodb put-item \
+    --table-name Order \
+    --item \
+        '{
+            "id": {"S": "1"}, 
+            "status": {"S": "DELIVERY"}, 
+            "desc": {"S": "iphone order"}, 
+            "order_date": {"S": "2022-08-09"}
+        }'

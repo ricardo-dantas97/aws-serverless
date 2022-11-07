@@ -1,0 +1,17 @@
+AWS CLI example creates a new order table using create-table
+
+aws dynamodb create-table \
+    --table-name Order \
+    --attribute-definitions \
+        AttributeName=id,AttributeType=S \
+        AttributeName=status,AttributeType=S \
+    --key-schema \
+        AttributeName=id,KeyType=HASH \
+        AttributeName=status,KeyType=RANGE \
+    --provisioned-throughput \
+        ReadCapacityUnits=5,WriteCapacityUnits=5 \
+    --table-class STANDARD
+
+
+Verify table
+aws dynamodb describe-table --table-name Order

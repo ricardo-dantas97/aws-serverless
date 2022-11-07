@@ -1,0 +1,20 @@
+- Core concepts - Tables, Items, Attributes, Indexes
+
+A table is a collection of items and each items is a collection of Attributes.
+An item is a set of attributes that can be uniquely identified among all of the other items
+Each item is composed of one or more attributes
+
+- Primary Key, Partition Key and Sort Key
+PK is the key that uniquely indentifies an item in the table. DynamoDB supports two different kinds of PK
+    Partition Key - Simple PK, composed of one attribute know as the partition key
+    Partition Key and Sort Key - Composite primary key, two attributes.
+
+- Partitions and data distribution with partition key and sort key
+Partition is an allocation of storage for a table, backed by SSD drivers and automatically replicated across multiple AZs. Partition management performs automatically.
+
+Data distribution: Partition Key
+If table has a partition key, DynamoDB stores and gets each item based on its partition key value
+
+Data distribution: Partition Key and Sort Key
+If table has a composite primary key, DynamoDB calculates the hash value of the partition key, stores all the items with the same partition key values close together, and ordered by sort key value.
+
