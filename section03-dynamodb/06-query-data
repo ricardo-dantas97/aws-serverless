@@ -1,0 +1,6 @@
+Query data from DynamoDB
+
+aws dynamodb query \
+    --table-name Order \
+    --key-condition-expression "id = :id" \
+    --expression-attribute-values '{ ":id": {"S": "1"}}'

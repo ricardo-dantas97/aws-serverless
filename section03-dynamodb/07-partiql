@@ -1,0 +1,24 @@
+PartiQL CRUD operations - Seems like SQL commands
+
+-- Create item
+aws dynamodb execute-statement \
+    --statement "INSERT INTO \"Order\" VALUE {'id': '2', 'status':'IN_PROGRESS'}"
+
+
+-- Retrieve item
+aws dynamodb execute-statement \
+    --statement "SELECT * FROM \"Order\" \
+    WHERE id = '1'"
+
+
+-- Update an item
+aws dynamodb execute-statement \
+    --statement " UPDATE \"Order\" \
+    SET description = 'updated order from CLI' \
+    WHERE id='2' AND status='IN_PROGRESS'"
+
+
+-- Delete an item
+aws dynamodb execute-statement \
+    --statement " DELETE FROM \"Order\" \
+    WHERE id='2' AND status='IN_PROGRESS' "

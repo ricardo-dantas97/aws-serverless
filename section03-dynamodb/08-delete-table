@@ -1,0 +1,3 @@
+Delete table from CLI
+
+aws dynamodb delete-table --table-name Order
