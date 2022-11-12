@@ -16,11 +16,12 @@ def lambda_handler(event, context):
                 post_body = json.loads(event['body'])
             else:
                 post_body = {}
-            body = f'Body received: {post_body}'
-                
+            body = f'Body received: {post_body}'                
         elif route == 'DELETE /product/{id}':
             id = event['pathParameters']['id']
             body = f'Processing DELETE product ID {id}'
+        else:
+            raise (f'Unsupported route: {route}')
         
         return {
             'status_code': 200,
